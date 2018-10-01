@@ -1,0 +1,58 @@
+
+
+.flex-container {
+	display: flex;
+	background-color: #B97CCA;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.boxed {
+	border:1px solid purple;
+	background-color: lavender;
+	}
+div{
+
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding:20px;
+	font-size: 30px; 
+	width: 200px;
+	text-align: center;}
+
+#animations {
+	width: 350px;
+	height: 100px;
+	background-color: purple;
+	position: relative;
+	animation-name: color-move;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+div{
+
+	width:300px;
+	height: 200px;
+	background-color: lavender;
+	margin: 200px;
+	/*transition:property-name duration*/
+	transition: all 2s;
+}
+
+div:hover {
+	background-color: blue;
+	transform: scale (2);
+	border-radius: 50%;
+	/*how you can put images in animations  */
+	 center top;
+}
+
+@keyframes color-move {
+	0% {background-color: purple; left:0px; top:0px;}
+ 	25% {background-color: lavender; left:200px; top:0px;}
+	50% {background-color: cyan; left:200px; top: 200px;}
+	75% {background-color: blue; left:0px; top:200px;}
+	100% {background-color: magenta; left:0px; top:0px;}
+}
+
